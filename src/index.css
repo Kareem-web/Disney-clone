@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  height: 100vh;
+  background-color: #131520;
+  min-height: 100vh;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+form p{
+  font-size: 13px;
+  color: red;
+  text-align: center;
+}
+
+input{
+  padding: 8px;
+  border: none;
+   border-bottom: 1px solid rgb(48, 63, 95);
+  /* border-radius: 6px; */
+  background: transparent;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.form-link{
+  font-size: 12px;
+  text-align: center;
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   margin-bottom: -20px;
+}
+
+.auth{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loginCard{
+      padding: 35px ;
+      /* display: flex;
+      flex-direction: column; */
+      height: 23rem;
+    }
+
+    .loginCardReg{
+      padding: 35px;
+      height: 27rem;
+    }
+
+      .loginCardReg .image{
+      display: flex;
+      width: 150px;
+      height: 30px;
+      margin-left: 75px;
+      position: relative;
+      
+    }
+
+    .loginCard .image{
+      display: flex;
+      width: 150px;
+      height: 30px;
+      margin-left: 75px;
+      position: relative;
+      
+    }
+
+/* .auth{
+  background-color: #b1b5fa;
+} */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.reg{
+  color: #ffe600;
+  /* padding: 5px; */
+  margin-top: 13px;
+  margin-left: -0px;
+  font: weight 400px; 
+   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+   text-decoration: underline;
+}
+
+.reg:hover{
+  color: #bcc6ff;
+}
+
+.bttn{
+   border-radius: 2px;
+  border: 1px solid transparent;
+  /* padding: 0.6em 1.2em; */
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: white;
+  color: #131520;
+  height: 40px;
+  padding: 7px;
+  margin-top: 15px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
